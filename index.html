@@ -101,6 +101,18 @@
       <span data-en="<strong>Consolidated my knowledge</strong>, systematically organizing the tech stack across frontend, backend, reverse engineering, AI, and framework development."
             data-zh="<strong>巩固所学知识</strong>，系统梳理前端、后端、逆向、AI 与框架开发的技术栈，沉淀成体系。"><strong>Consolidated my knowledge</strong>, systematically organizing the tech stack across frontend, backend, reverse engineering, AI, and framework development.</span>
     </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.10</span>
+      <span data-en="Started studying <strong>Shizuku</strong>'s service framework and built a local ADB startup path on top of it, letting the service run entirely on the phone."
+            data-zh="开始研究 <strong>Shizuku</strong> 的服务框架，并基于其源码构建本机 ADB 启动方案，让服务完全在手机上运行。">Started studying <strong>Shizuku</strong>'s service framework and built a local ADB startup path on top of it, letting the service run entirely on the phone.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.11</span>
+      <span data-en="Released <strong>Xiluoya (汐洛雅)</strong>: ported the <strong>LSPatch</strong> engine for on-device APK patching with embedded Xposed modules, then open-sourced the project and published this site."
+            data-zh="发布 <strong>Xiluoya（汐洛雅）</strong>：将 <strong>LSPatch</strong> 引擎移植到设备端，支持在手机上为 APK 打补丁并内嵌 Xposed 模块，随后开源代码并上线本站。">Released <strong>Xiluoya (汐洛雅)</strong>: ported the <strong>LSPatch</strong> engine for on-device APK patching with embedded Xposed modules, then open-sourced the project and published this site.</span>
+    </div>
   </section>
 
   <section class="section">
@@ -112,6 +124,7 @@
         <span class="tag-item primary" data-en="QQFrame Development" data-zh="QQFrame 开发">QQFrame Development</span>
         <span class="tag-item primary" data-en="Reverse Engineering" data-zh="逆向工程">Reverse Engineering</span>
         <span class="tag-item primary" data-en="Android App Development" data-zh="Android APP 开发">Android App Development</span>
+        <span class="tag-item primary" data-en="Xposed / LSPatch Module Development" data-zh="Xposed / LSPatch 模块开发">Xposed / LSPatch Module Development</span>
       </div>
     </div>
 
@@ -148,12 +161,30 @@
         <span class="tag-item" data-en="APK Decompilation" data-zh="APK 反编译">APK Decompilation</span>
         <span class="tag-item" data-en="SO Reverse Engineering" data-zh="SO 逆向分析">SO Reverse Engineering</span>
         <span class="tag-item" data-en="Dynamic Debugging" data-zh="动态调试">Dynamic Debugging</span>
+        <span class="tag-item">Shizuku API</span>
+        <span class="tag-item" data-en="APK Patching" data-zh="APK 补丁">APK Patching</span>
+        <span class="tag-item">GitHub Actions</span>
       </div>
     </div>
   </section>
 
   <section class="section">
     <h2 class="section-title" data-en="Projects" data-zh="项目">Projects</h2>
+
+    <div class="project-card">
+      <h3 data-en="Xiluoya (汐洛雅)" data-zh="Xiluoya（汐洛雅）">Xiluoya (汐洛雅)</h3>
+      <p class="card-desc"
+         data-en="An Android toolbox built on Shizuku and LSPatch. The phone starts the service itself through local ADB, patches APKs on-device and embeds Xposed modules — no computer or root required."
+         data-zh="基于 Shizuku 与 LSPatch 的安卓工具箱。手机自身通过本机 ADB 启动服务，在设备上为 APK 打补丁并内嵌 Xposed 模块，全程不需要电脑或 root。">An Android toolbox built on Shizuku and LSPatch. The phone starts the service itself through local ADB, patches APKs on-device and embeds Xposed modules — no computer or root required.</p>
+      <div class="card-links">
+        <span class="tag">Shizuku API</span>
+        <span class="tag">LSPatch</span>
+        <span class="tag" data-en="Open Source" data-zh="开源">Open Source</span>
+        <a href="https://github.com/JackHanXyz/Xiluoya" target="_blank" rel="noopener">🐙 GitHub</a>
+        <a href="https://github.com/JackHanXyz/Xiluoya/releases" target="_blank" rel="noopener"
+           data-en="⬇ Releases" data-zh="⬇ 版本下载">⬇ Releases</a>
+      </div>
+    </div>
 
     <div class="project-card">
       <h3>QQFrame Framework</h3>
