@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JackHan - Bio</title>
+<style>
+:root{--bg:#fafafa;--card-bg:#fff;--text:#1a1a1a;--text-secondary:#555;--accent:#1a73e8;--accent-hover:#1557b0;--accent-soft:rgba(26,115,232,.07);--accent-border:rgba(26,115,232,.25);--border:#e8e8e8;--shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);--shadow-hover:0 4px 12px rgba(0,0,0,.08)}[data-theme="dark"]{--bg:#0f1115;--card-bg:#1a1d24;--text:#e8eaed;--text-secondary:#9aa0a6;--accent:#5b9dff;--accent-hover:#7db1ff;--accent-soft:rgba(91,157,255,.12);--accent-border:rgba(91,157,255,.35);--border:#2a2e37;--shadow:0 1px 3px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.3);--shadow-hover:0 4px 16px rgba(0,0,0,.5)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .3s ease,color .3s ease}.container{max-width:780px;margin:0 auto;padding:48px 24px 80px}.top-controls{position:fixed;top:22px;right:24px;display:flex;gap:8px;z-index:100}.top-controls button{display:flex;align-items:center;gap:2px;background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:3px;box-shadow:var(--shadow);cursor:pointer;font-family:inherit;transition:box-shadow .25s ease,background .3s ease,border-color .3s ease}.top-controls button:hover{box-shadow:var(--shadow-hover)}.top-controls button span{font-size:12.5px;font-weight:600;padding:5px 13px;border-radius:16px;color:var(--text-secondary);transition:all .22s ease;user-select:none;letter-spacing:.2px;line-height:1}.top-controls button span.active{background:var(--accent);color:#fff;box-shadow:0 2px 6px rgba(26,115,232,.3)}.header{display:flex;align-items:center;gap:28px;margin-bottom:36px}.avatar{width:110px;height:110px;border-radius:50%;flex-shrink:0;overflow:hidden;background:url('avatar.jpg') center/cover no-repeat,linear-gradient(135deg,#1a73e8 0%,#7b3fe4 100%);box-shadow:0 4px 14px rgba(26,115,232,.35);user-select:none}.header-info h1{font-size:26px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px;display:flex;align-items:center;gap:8px}.hk-flag{width:27px;height:18px;border-radius:3px;flex-shrink:0;box-shadow:0 1px 2px rgba(0,0,0,.15);display:block}.header-info .subtitle{font-size:15px;color:var(--text-secondary);margin-bottom:10px}.header-links{display:flex;flex-wrap:wrap;gap:6px}.header-links a{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--accent);text-decoration:none;padding:4px 10px;border:1px solid var(--border);border-radius:16px;background:var(--card-bg);transition:all .2s ease}.header-links a:hover{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 8px rgba(26,115,232,.3)}.section{margin-bottom:36px}.section-title{font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block;letter-spacing:-.2px}.section>p{font-size:15px;color:var(--text-secondary);margin-bottom:10px}.project-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:22px 24px;margin-bottom:16px;box-shadow:var(--shadow);transition:box-shadow .25s ease,transform .25s ease,background .3s ease,border-color .3s ease}.project-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px)}.project-card h3{font-size:16px;font-weight:700;margin-bottom:6px;color:var(--text)}.project-card .card-desc{font-size:14.5px;color:var(--text-secondary);margin-bottom:12px;line-height:1.6}.card-links{display:flex;gap:10px;flex-wrap:wrap}.card-links a,.card-links span.tag{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--accent);text-decoration:none;padding:5px 12px;border-radius:6px;background:var(--accent-soft);transition:background .2s,color .2s}.card-links a:hover{background:var(--accent);color:#fff}.github-header{display:flex;align-items:center;gap:14px;margin-bottom:18px}.github-avatar{width:56px;height:56px;border-radius:50%;flex-shrink:0;overflow:hidden;background:url('avatar.jpg') center/cover no-repeat,linear-gradient(135deg,#1a73e8 0%,#7b3fe4 100%);box-shadow:0 2px 8px rgba(26,115,232,.25)}.github-meta h3{font-size:16px;font-weight:700;margin-bottom:2px}.github-meta p{font-size:13px;color:var(--text-secondary)}.skill-group{margin-bottom:18px}.skill-group h4{font-size:14px;font-weight:600;color:var(--text);margin-bottom:10px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag-item{font-size:13.5px;color:var(--text-secondary);padding:5px 13px;border-radius:20px;background:var(--card-bg);border:1px solid var(--border);transition:all .2s ease;cursor:default}.tag-item:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}.tag-item.primary{background:var(--accent-soft);border-color:var(--accent-border);color:var(--accent);font-weight:600}.timeline-item{display:flex;gap:16px;padding:12px 0;font-size:14.5px;color:var(--text-secondary)}.timeline-item:not(:last-child){border-bottom:1px dashed var(--border)}.timeline-year{font-family:"SF Mono","Fira Code",monospace;font-size:13px;color:var(--accent);font-weight:600;min-width:86px;padding-top:1px;flex-shrink:0}.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.contact-item{display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:16px 8px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:all .25s ease;text-align:center}.contact-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);border-color:var(--accent-border)}.contact-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--accent-soft);flex-shrink:0}.contact-icon svg{width:18px;height:18px;display:block;fill:currentColor}.contact-icon .icon-qq{color:#12B7F5}.contact-icon .icon-github{color:#181717}[data-theme="dark"] .contact-icon .icon-github{color:#e8eaed}.contact-icon .icon-dingtalk{color:#0089FF}.contact-text{min-width:0;width:100%}.contact-label{font-size:11px;color:var(--text-secondary);opacity:.75;line-height:1.3}.contact-value{font-size:12px;font-weight:600;color:var(--text);line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.footer{text-align:center;padding-top:24px;border-top:1px solid var(--border);font-size:13px;color:var(--text-secondary);opacity:.7}.footer a{color:var(--accent);text-decoration:none}@media (max-width:600px){.container{padding:28px 16px 60px}.top-controls{top:14px;right:14px;gap:6px}.top-controls button span{font-size:12px;padding:4px 11px}.header{flex-direction:column;align-items:flex-start;gap:18px;margin-top:34px}.avatar{width:80px;height:80px}.header-info h1{font-size:22px}.hk-flag{width:23px;height:15px}.project-card{padding:18px 16px}.timeline-item{flex-direction:column;gap:2px}.timeline-year{min-width:auto}.github-header{flex-direction:column;align-items:flex-start;gap:10px}.contact-grid{grid-template-columns:repeat(2,1fr)}}@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.section{animation:fadeInUp .5s ease both}.section:nth-child(2){animation-delay:.05s}.section:nth-child(3){animation-delay:.10s}.section:nth-child(4){animation-delay:.15s}.section:nth-child(5){animation-delay:.20s}.section:nth-child(6){animation-delay:.25s}.section:nth-child(7){animation-delay:.30s}.section:nth-child(8){animation-delay:.35s}.section:nth-child(9){animation-delay:.40s}
+</style>
+</head>
+<body>
+
+<div class="top-controls">
+  <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+    <span data-theme-val="light">☀</span>
+    <span data-theme-val="dark" class="active">☾</span>
+  </button>
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+    <span data-lang="en" class="active">EN</span>
+    <span data-lang="zh">中文</span>
+  </button>
+</div>
+
+<div class="container">
+
+  <header class="header">
+    <div class="avatar" role="img" aria-label="JackHan avatar"></div>
+    <div class="header-info">
+      <h1>JackHan<svg class="hk-flag" viewBox="0 0 30 20" role="img" aria-label="Hong Kong"><rect width="30" height="20" fill="#DE2910"/><g transform="translate(15 10)"><g fill="#fff"><ellipse cx="0" cy="-3.6" rx="1.5" ry="2.9"/><ellipse cx="0" cy="-3.6" rx="1.5" ry="2.9" transform="rotate(72)"/><ellipse cx="0" cy="-3.6" rx="1.5" ry="2.9" transform="rotate(144)"/><ellipse cx="0" cy="-3.6" rx="1.5" ry="2.9" transform="rotate(216)"/><ellipse cx="0" cy="-3.6" rx="1.5" ry="2.9" transform="rotate(288)"/></g><circle r="1.3" fill="#fff"/></g></svg></h1>
+      <p class="subtitle"
+         data-en="Since that day, I've wandered through streets and alleys, but I can never find your figure anymore."
+         data-zh="从那日过后，我穿越过大街小巷，却再也找不到妳的身影。">从那日过后，我穿越过大街小巷，却再也找不到妳的身影。</p>
+      <div class="header-links">
+        <a href="mailto:adsmt@qq.com">✉ Email</a>
+        <a href="tencent://message/?uin=2931647499" target="_blank" rel="noopener">💬 QQ</a>
+        <a href="https://github.com/JackHanXyz/" target="_blank" rel="noopener">🐙 GitHub</a>
+        <a href="#contact" data-en="📮 Contact" data-zh="📮 联系方式">📮 Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+    <p data-en="Hi, I'm <strong>JackHan</strong>, a developer and reverse engineer who loves tinkering. I currently focus on the development and ecosystem of the <strong>QQFrame</strong> framework, while also working on Android app development, reverse engineering, AI model deployment, and model training."
+       data-zh="大家好，我是 <strong>JackHan</strong>，一名热爱折腾的开发者与逆向工程师。目前专注于 <strong>QQFrame</strong> 框架的开发与生态建设，同时也会进行 Android 应用开发、逆向分析、AI 模型部署与训练。">Hi, I'm <strong>JackHan</strong>, a developer and reverse engineer who loves tinkering. I currently focus on the development and ecosystem of the <strong>QQFrame</strong> framework, while also working on Android app development, reverse engineering, AI model deployment, and model training.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title" data-en="My Journey" data-zh="技术成长">My Journey</h2>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2022.12</span>
+      <span data-en="Started learning <strong>HTML</strong>, wrote my first line of web code, and officially entered the world of programming."
+            data-zh="开始学习 <strong>HTML</strong>，写下第一行网页代码，正式踏入编程世界。">Started learning <strong>HTML</strong>, wrote my first line of web code, and officially entered the world of programming.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2023.04</span>
+      <span data-en="Started learning <strong>PHP</strong>, got into backend development and server-side logic, and began building dynamic websites."
+            data-zh="开始学习 <strong>PHP</strong>，接触后端开发与服务器交互逻辑，开始做动态网站。">Started learning <strong>PHP</strong>, got into backend development and server-side logic, and began building dynamic websites.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2024.11</span>
+      <span data-en="Started learning <strong>EPL</strong> (Easy Programming Language), entered desktop software development, and began exploring reverse engineering and network protocol research."
+            data-zh="开始学习 <strong>易语言</strong>，进入桌面软件开发领域，同时开始接触逆向分析与网络协议研究。">Started learning <strong>EPL</strong> (Easy Programming Language), entered desktop software development, and began exploring reverse engineering and network protocol research.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2025.01</span>
+      <span data-en="Officially started developing the <strong>QQFrame</strong> framework, focusing on architecture design and feature implementation."
+            data-zh="正式开始 <strong>QQFrame</strong> 框架的开发工作，专注于框架架构设计与功能实现。">Officially started developing the <strong>QQFrame</strong> framework, focusing on architecture design and feature implementation.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2025.07</span>
+      <span data-en="Began systematic study of <strong>Android App development</strong> — Activity lifecycle, UI layouts, data storage, network requests, and the four major components. Now capable of building complete apps independently."
+            data-zh="开始系统学习 <strong>Android APP 开发</strong>，深入 Activity 生命周期、UI 布局、数据存储、网络请求与四大组件，具备独立开发完整应用的能力。">Began systematic study of <strong>Android App development</strong> — Activity lifecycle, UI layouts, data storage, network requests, and the four major components. Now capable of building complete apps independently.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.03</span>
+      <span data-en="Researched and <strong>deployed local AI models</strong> for testing, mastering local inference setup, model quantization, and performance tuning."
+            data-zh="研究并在本地 <strong>部署 AI 大模型</strong>进行测试，掌握本地推理环境搭建、模型量化与性能调优。">Researched and <strong>deployed local AI models</strong> for testing, mastering local inference setup, model quantization, and performance tuning.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.04</span>
+      <span data-en="Started reverse engineering QQ's <strong>LibFekit.so</strong>, studying its internal implementation and communication mechanisms."
+            data-zh="开始对 QQ 的 <strong>LibFekit.so</strong> 进行逆向分析，研究其内部实现与通信机制。">Started reverse engineering QQ's <strong>LibFekit.so</strong>, studying its internal implementation and communication mechanisms.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.06</span>
+      <span data-en="Started training <strong>YOLO-V5</strong> image models, stepping into object detection and computer vision."
+            data-zh="开始训练 <strong>YOLO-V5</strong> 图像模型，涉足目标检测与计算机视觉领域。">Started training <strong>YOLO-V5</strong> image models, stepping into object detection and computer vision.</span>
+    </div>
+
+    <div class="timeline-item">
+      <span class="timeline-year">2026.08</span>
+      <span data-en="<strong>Consolidated my knowledge</strong>, systematically organizing the tech stack across frontend, backend, reverse engineering, AI, and framework development."
+            data-zh="<strong>巩固所学知识</strong>，系统梳理前端、后端、逆向、AI 与框架开发的技术栈，沉淀成体系。"><strong>Consolidated my knowledge</strong>, systematically organizing the tech stack across frontend, backend, reverse engineering, AI, and framework development.</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
+
+    <div class="skill-group">
+      <h4 data-en="🔧 Core Focus" data-zh="🔧 主力方向">🔧 Core Focus</h4>
+      <div class="tags">
+        <span class="tag-item primary" data-en="QQFrame Development" data-zh="QQFrame 开发">QQFrame Development</span>
+        <span class="tag-item primary" data-en="Reverse Engineering" data-zh="逆向工程">Reverse Engineering</span>
+        <span class="tag-item primary" data-en="Android App Development" data-zh="Android APP 开发">Android App Development</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4 data-en="💻 Programming Languages" data-zh="💻 编程语言">💻 Programming Languages</h4>
+      <div class="tags">
+        <span class="tag-item">Python</span>
+        <span class="tag-item">Java</span>
+        <span class="tag-item">PHP</span>
+        <span class="tag-item" data-en="EPL" data-zh="易语言">EPL</span>
+        <span class="tag-item">HTML / CSS</span>
+        <span class="tag-item">JavaScript</span>
+        <span class="tag-item">SQL</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4 data-en="🤖 AI &amp; Vision" data-zh="🤖 AI &amp; 图像">🤖 AI &amp; Vision</h4>
+      <div class="tags">
+        <span class="tag-item" data-en="Local AI Model Deployment" data-zh="本地 AI 模型部署">Local AI Model Deployment</span>
+        <span class="tag-item" data-en="YOLO-V5 Training" data-zh="YOLO-V5 训练">YOLO-V5 Training</span>
+        <span class="tag-item" data-en="Model Quantization &amp; Tuning" data-zh="模型量化与调优">Model Quantization &amp; Tuning</span>
+        <span class="tag-item" data-en="Object Detection" data-zh="目标检测">Object Detection</span>
+      </div>
+    </div>
+
+    <div class="skill-group">
+      <h4 data-en="🛠 Tools &amp; Technologies" data-zh="🛠 工具与技术">🛠 Tools &amp; Technologies</h4>
+      <div class="tags">
+        <span class="tag-item">Android Studio</span>
+        <span class="tag-item">IDEA</span>
+        <span class="tag-item">Xposed / Hook</span>
+        <span class="tag-item" data-en="Network Protocol Analysis" data-zh="网络协议分析">Network Protocol Analysis</span>
+        <span class="tag-item" data-en="APK Decompilation" data-zh="APK 反编译">APK Decompilation</span>
+        <span class="tag-item" data-en="SO Reverse Engineering" data-zh="SO 逆向分析">SO Reverse Engineering</span>
+        <span class="tag-item" data-en="Dynamic Debugging" data-zh="动态调试">Dynamic Debugging</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title" data-en="Projects" data-zh="项目">Projects</h2>
+
+    <div class="project-card">
+      <h3>QQFrame Framework</h3>
+      <p class="card-desc"
+         data-en="A development framework for the QQ platform, started in January 2025. The goal is to provide cleaner and more stable interface wrappers that lower the barrier to secondary development. Currently under continuous iteration — feedback and collaboration are welcome."
+         data-zh="一个面向 QQ 平台的开发框架，从 2025 年 1 月开始投入开发。目标是为开发者提供更简洁、更稳定的接口封装，降低二次开发门槛。目前处于持续迭代阶段，欢迎交流反馈。">A development framework for the QQ platform, started in January 2025. The goal is to provide cleaner and more stable interface wrappers that lower the barrier to secondary development. Currently under continuous iteration — feedback and collaboration are welcome.</p>
+      <div class="card-links">
+        <span class="tag" data-en="🚧 In Development" data-zh="🚧 开发中">🚧 In Development</span>
+        <a href="mailto:adsmt@qq.com" data-en="📧 Contact for Collaboration" data-zh="📧 联系合作">📧 Contact for Collaboration</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 data-en="Android App Development" data-zh="Android 应用开发">Android App Development</h3>
+      <p class="card-desc"
+         data-en="Full-stack Android app development skills, familiar with the Activity lifecycle, UI layouts, data storage, network requests, Service and Broadcast mechanisms. Able to independently deliver an app from requirements to release."
+         data-zh="具备完整的 Android APP 开发能力，熟悉 Activity 生命周期、UI 布局、数据存储、网络请求、Service 与广播机制等。可独立完成从需求到上线的全流程开发。">Full-stack Android app development skills, familiar with the Activity lifecycle, UI layouts, data storage, network requests, Service and Broadcast mechanisms. Able to independently deliver an app from requirements to release.</p>
+      <div class="card-links">
+        <span class="tag">Java / Kotlin</span>
+        <span class="tag">Android Studio</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 data-en="Reverse Engineering &amp; Protocol Research" data-zh="逆向分析与协议研究">Reverse Engineering &amp; Protocol Research</h3>
+      <p class="card-desc"
+         data-en="Research on reverse engineering of Android and desktop software, including APK decompilation, Smali analysis, native SO library reversing (such as QQ's LibFekit.so), dynamic debugging, hooking, and packet capture plus parsing of network protocols."
+         data-zh="研究 Android 与桌面软件的逆向分析，包括 APK 反编译、Smali 分析、SO 动态库逆向（如 QQ LibFekit.so）、动态调试、Hook 技术以及网络协议的抓包与解析。">Research on reverse engineering of Android and desktop software, including APK decompilation, Smali analysis, native SO library reversing (such as QQ's LibFekit.so), dynamic debugging, hooking, and packet capture plus parsing of network protocols.</p>
+      <div class="card-links">
+        <span class="tag" data-en="🔍 Reverse Engineering" data-zh="🔍 逆向工程">🔍 Reverse Engineering</span>
+        <span class="tag" data-en="📡 Protocol Analysis" data-zh="📡 协议分析">📡 Protocol Analysis</span>
+        <span class="tag" data-en="🧩 SO Reversing" data-zh="🧩 SO 逆向">🧩 SO Reversing</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3 data-en="AI Model Deployment &amp; Training" data-zh="AI 模型部署与训练">AI Model Deployment &amp; Training</h3>
+      <p class="card-desc"
+         data-en="Deployed large AI models in a local environment and completed inference testing, with hands-on experience in model quantization and performance tuning. Also trained YOLO-V5 models for object detection, stepping into the field of computer vision."
+         data-zh="在本地环境部署 AI 大模型并完成推理测试，掌握模型量化与性能调优；同时使用 YOLO-V5 训练图像目标检测模型，涉足计算机视觉领域。">Deployed large AI models in a local environment and completed inference testing, with hands-on experience in model quantization and performance tuning. Also trained YOLO-V5 models for object detection, stepping into the field of computer vision.</p>
+      <div class="card-links">
+        <span class="tag" data-en="🤖 Local LLM" data-zh="🤖 本地大模型">🤖 Local LLM</span>
+        <span class="tag" data-en="👁 YOLO-V5" data-zh="👁 YOLO-V5">👁 YOLO-V5</span>
+        <span class="tag" data-en="⚙ Model Tuning" data-zh="⚙ 模型调优">⚙ Model Tuning</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title" data-en="GitHub" data-zh="GitHub">GitHub</h2>
+
+    <div class="project-card">
+      <div class="github-header">
+        <div class="github-avatar"></div>
+        <div class="github-meta">
+          <h3>JackHanXyz</h3>
+          <p data-en="XiaoHan Team · HongKong" data-zh="小含团队 · 香港">XiaoHan Team · HongKong</p>
+        </div>
+      </div>
+
+      <p class="card-desc"
+         data-en="My open-source projects and code repositories. Feel free to explore and star if you find something useful."
+         data-zh="我的开源项目与代码仓库，欢迎浏览，如果觉得有用可以点个 Star。">My open-source projects and code repositories. Feel free to explore and star if you find something useful.</p>
+
+      <div class="card-links">
+        <a href="https://github.com/JackHanXyz/" target="_blank" rel="noopener">🐙 github.com/JackHanXyz</a>
+        <a href="https://github.com/JackHanXyz?tab=repositories" target="_blank" rel="noopener"
+           data-en="📂 View All Repositories" data-zh="📂 查看全部仓库">📂 View All Repositories</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 class="section-title" data-en="Contact" data-zh="联系方式">Contact</h2>
+    <div class="contact-grid">
+
+      <a class="contact-item" href="mailto:adsmt@qq.com">
+        <div class="contact-icon">✉</div>
+        <div class="contact-text">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">adsmt@qq.com</div>
+        </div>
+      </a>
+
+      <a class="contact-item" href="tencent://message/?uin=2931647499" target="_blank" rel="noopener">
+        <div class="contact-icon"><svg class="icon-qq" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.395 15.035a40 40 0 0 0-.803-2.264l-1.079-2.695c.001-.032.014-.562.014-.836C19.526 4.632 17.351 0 12 0S4.474 4.632 4.474 9.241c0 .274.013.804.014.836l-1.08 2.695a39 39 0 0 0-.802 2.264c-1.021 3.283-.69 4.643-.438 4.673.54.065 2.103-2.472 2.103-2.472 0 1.469.756 3.387 2.394 4.771-.612.188-1.363.479-1.845.835-.434.32-.379.646-.301.778.343.578 5.883.369 7.482.189 1.6.18 7.14.389 7.483-.189.078-.132.132-.458-.301-.778-.483-.356-1.233-.646-1.846-.836 1.637-1.384 2.393-3.302 2.393-4.771 0 0 1.563 2.537 2.103 2.472.251-.03.581-1.39-.438-4.673"/></svg></div>
+        <div class="contact-text">
+          <div class="contact-label">QQ</div>
+          <div class="contact-value">2931647499</div>
+        </div>
+      </a>
+
+      <a class="contact-item" href="https://github.com/JackHanXyz/" target="_blank" rel="noopener">
+        <div class="contact-icon"><svg class="icon-github" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></div>
+        <div class="contact-text">
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">JackHanXyz</div>
+        </div>
+      </a>
+
+      <a class="contact-item" href="https://www.dingtalk.com/" target="_blank" rel="noopener">
+        <div class="contact-icon"><svg class="icon-dingtalk" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 1.5C10.3 1.5 6.8 3.7 5.2 6.4c-1.1 1.9-1.3 4.1-.6 6 .6 1.6 2 2.9 3.7 3.4-.3 1.3-.9 3.1-1.8 5.2-.2.5.1 1 .6 1.2.5.2 1-.1 1.2-.6.8-1.9 1.4-3.7 1.8-5 .2-.7-.3-1.4-1-1.4-.9 0-1.8-.5-2.2-1.3-.5-.9-.4-2 .2-2.8.9-1.4 2.5-2.3 4.2-2.3.5 0 .9-.4.9-.9s-.4-.9-.9-.9c-2.5 0-4.8 1.3-6.1 3.4-.9 1.4-1.1 3.1-.5 4.7.5 1.3 1.6 2.3 2.9 2.8-.4 1.1-.9 2.4-1.5 3.8-.2.5 0 1.1.5 1.3.5.2 1.1 0 1.3-.5.6-1.5 1.1-2.9 1.5-4 .2-.6-.3-1.2-.9-1.2-.9 0-1.7-.5-2.1-1.3-.4-.8-.3-1.7.2-2.4.8-1.3 2.2-2.1 3.7-2.1.4 0 .8-.4.8-.8s-.4-.8-.8-.8c-2.1 0-4 1.1-5.1 2.9-.8 1.3-1 2.8-.4 4.2.4 1.1 1.3 2 2.4 2.4-.3 1-.7 2.1-1.2 3.3-.2.5 0 1 .4 1.2.4.2 1 0 1.2-.4.5-1.3.9-2.5 1.2-3.5.2-.6-.3-1.2-.9-1.2-.8 0-1.5-.4-1.9-1.1-.3-.7-.2-1.5.2-2.1.7-1.1 1.9-1.8 3.2-1.8.4 0 .7-.3.7-.7s-.3-.7-.7-.7c-1.8 0-3.4 1-4.4 2.5-.7 1.1-.8 2.5-.3 3.7.3.9 1 1.7 1.9 2.1z"/></svg></div>
+        <div class="contact-text">
+          <div class="contact-label">DingTalk</div>
+          <div class="contact-value">xiaohantesk</div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2022-Nowadays JackHan &middot; Keep Coding, Keep Reversing.</p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var LANG_KEY = 'jackhan-lang';
+  var THEME_KEY = 'jackhan-theme';
+  var DEFAULT_LANG = 'en';
+  var DEFAULT_THEME = 'dark';
+
+  var langToggle = document.getElementById('langToggle');
+  var langOptions = langToggle.querySelectorAll('span[data-lang]');
+  var themeToggle = document.getElementById('themeToggle');
+  var themeOptions = themeToggle.querySelectorAll('span[data-theme-val]');
+
+  function applyLang(lang) {
+    document.querySelectorAll('[data-en][data-zh]').forEach(function (el) {
+      var value = el.getAttribute('data-' + lang);
+      if (value !== null) el.innerHTML = value;
+    });
+    document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+    langOptions.forEach(function (s) {
+      s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+    });
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeOptions.forEach(function (s) {
+      s.classList.toggle('active', s.getAttribute('data-theme-val') === theme);
+    });
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+  }
+
+  var savedLang = DEFAULT_LANG;
+  var savedTheme = DEFAULT_THEME;
+  try {
+    var sl = localStorage.getItem(LANG_KEY);
+    if (sl === 'en' || sl === 'zh') savedLang = sl;
+    var st = localStorage.getItem(THEME_KEY);
+    if (st === 'light' || st === 'dark') savedTheme = st;
+  } catch (e) {}
+
+  applyLang(savedLang);
+  applyTheme(savedTheme);
+
+  langOptions.forEach(function (span) {
+    span.addEventListener('click', function () {
+      applyLang(span.getAttribute('data-lang'));
+    });
+  });
+
+  themeOptions.forEach(function (span) {
+    span.addEventListener('click', function () {
+      applyTheme(span.getAttribute('data-theme-val'));
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
